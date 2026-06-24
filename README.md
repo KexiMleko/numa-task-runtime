@@ -22,6 +22,10 @@ Dual-socket Intel Xeon E5-2640 v2, 440GB DDR3 across 2 NUMA nodes connected via 
 - [Hardware specification and topology](docs/hardware.md)
 - [Design decisions and rationale](docs/design.md)
 
+## Conventions
+
+Git commit message format is `type(scope): description`. Scope is required for `feat`, `fix`, `perf`, `refactor`. Omit scope for `build`, `docs`, `chore`, `test`.
+
 ## Key References
 
 - Williams, *C++ Concurrency in Action*
