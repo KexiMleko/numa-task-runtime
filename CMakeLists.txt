@@ -7,7 +7,7 @@ if(EXISTS "${LOC_PATH}")
     message(FATAL_ERROR "You cannot build in a source directory (or any directory with a CMakeLists.txt file). Please make a build subdirectory. Remove CMakeCache.txt and CMakeFiles.")
 endif()
 
-add_library(task_runtime STATIC src/init.cpp)
+add_library(task_runtime STATIC src/task_runtime.cpp)
 add_executable(benchmark benchmarks/test_bm.cpp)
 
 target_compile_features(task_runtime PUBLIC cxx_std_20)
