@@ -13,5 +13,6 @@ add_executable(benchmark benchmarks/test_bm.cpp)
 target_compile_features(task_runtime PUBLIC cxx_std_20)
 set_target_properties(task_runtime PROPERTIES CXX_EXTENSIONS OFF)
 target_include_directories(task_runtime PUBLIC include/task_runtime/)
+target_include_directories(task_runtime PUBLIC include/)
 
 target_link_libraries(benchmark PRIVATE task_runtime)
